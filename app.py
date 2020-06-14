@@ -68,7 +68,7 @@ def add_score():
 @app.route('/scores', methods=["GET"])
 def get_scores():
     all_scores = Scores.query.all()
-    result = scores_schema.dump(all_scoress)
+    result = scores_schema.dump(all_scores)
 
     return jsonify(result)
 
